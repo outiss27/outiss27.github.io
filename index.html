@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Año Nuevo 2025!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Slideshow de imágenes -->
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="img1.jpeg" alt="Año Nuevo 1">
+            </div>
+            <div class="slide fade">
+                <img src="img2.jpeg" alt="Año Nuevo 2">
+            </div>
+            <div class="slide fade">
+                <img src="img3.jpeg" alt="Año Nuevo 3">
+            </div>
+            
+            <!-- Controles -->
+            <button class="prev" onclick="cambiarSlide(-1)">&#10094;</button>
+            <button class="next" onclick="cambiarSlide(1)">&#10095;</button>
+        </div>
+
+        <!-- Indicadores -->
+        <div class="dots-container">
+            <span class="dot" onclick="slideActual(1)"></span>
+            <span class="dot" onclick="slideActual(2)"></span>
+            <span class="dot" onclick="slideActual(3)"></span>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="content">
+            <h1 class="title">¡Feliz Año Nuevo 2026!</h1>
+            <p class="subtitle">Que este nuevo año traiga éxito, alegría y nuevas aventuras</p>
+            
+            <!-- Contador regresivo -->
+            <div class="countdown" id="countdown">
+                <div class="time-box">
+                    <span id="dias">00</span>
+                    <p>Días</p>
+                </div>
+                <div class="time-box">
+                    <span id="horas">00</span>
+                    <p>Horas</p>
+                </div>
+                <div class="time-box">
+                    <span id="minutos">00</span>
+                    <p>Minutos</p>
+                </div>
+                <div class="time-box">
+                    <span id="segundos">00</span>
+                    <p>Segundos</p>
+                </div>
+            </div>
+
+            <div class="mensaje">
+                <p>✨ Nuevos comienzos, nuevas oportunidades ✨</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Partículas de confeti -->
+    <canvas id="confetti"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
